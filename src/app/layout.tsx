@@ -9,7 +9,8 @@ import clsx from "clsx";
 // Styles
 import "react-toastify/dist/ReactToastify.css";
 import "@fortawesome/fontawesome-svg-core/styles.css";
-import "./globals.scss";
+import "./globals.css";
+import "@/assets/styles/index.scss";
 
 // Internal imports
 import { THEME_ANTD } from "@/common/theme";
@@ -53,7 +54,10 @@ const generateMetaTags = (metadata: typeof SITE_METADATA) => (
   <>
     <title>{metadata.title}</title>
     <meta name="description" content={metadata.description} />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,shrink-to-fit=no,maximum-scale=1"
+    />
     <link rel="icon" href="/src/app/favicon.ico" />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
