@@ -141,6 +141,7 @@ export default function useHttpClient(isConvert?: boolean): ResultHttpClient {
           originalRequest._retry = true;
           try {
             const newAccessToken = await refreshAuthToken();
+
             axiosAuth.defaults.headers.common[
               "Authorization"
             ] = `Bearer ${newAccessToken}`;

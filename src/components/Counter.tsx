@@ -1,5 +1,5 @@
 "use client";
-import { useStore } from "../../stores/useStore";
+import { useStore } from "../stores/useStore";
 
 export default function Counter() {
   const { count, increase, decrease } = useStore();
